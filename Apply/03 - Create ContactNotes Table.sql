@@ -7,9 +7,9 @@ END;
 
 CREATE TABLE dbo.ContactNotes
 (
-   NoteID INT IDENTITY(1,1),
-   ContactID INT,
-   Notes VARCHAR(200),
+   NoteID INT IDENTITY(1,1) NOT NULL,
+   ContactID INT NOT NULL,
+   Notes VARCHAR(200) NOT NULL,
    CONSTRAINT PK_ContactNotes PRIMARY KEY CLUSTERED (NoteID)
 );
 

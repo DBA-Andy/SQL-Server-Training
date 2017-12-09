@@ -7,10 +7,10 @@ END;
 
 CREATE TABLE ContactVerificationDetails
 (
-   ContactID INT,
-   DrivingLicenseNumber VARCHAR(40),
-   PassportNumber VARCHAR(40),
-   ContactVerified BIT,
+   ContactID INT  NOT NULL,
+   DrivingLicenseNumber VARCHAR(40) NULL,
+   PassportNumber VARCHAR(40) NULL,
+   ContactVerified BIT NOT NULL CONSTRAINT DF_ContactVerificationDetails_ContactVerified DEFAULT 0,
    CONSTRAINT PK_ContactVerification_Details PRIMARY KEY CLUSTERED (ContactID)
 );
 

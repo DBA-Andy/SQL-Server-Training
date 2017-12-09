@@ -7,8 +7,8 @@ END;
 
 CREATE TABLE ContactRoles
 (
-   ContactID INT,
-   RoleID INT
+   ContactID INT NOT NULL,
+   RoleID INT NOT NULL,
    CONSTRAINT PK_ContactRoles PRIMARY KEY CLUSTERED (ContactID, RoleID)
 );
 

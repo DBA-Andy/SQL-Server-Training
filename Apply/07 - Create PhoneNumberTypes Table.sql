@@ -7,7 +7,7 @@ END;
 
 CREATE TABLE PhoneNumberTypes
 (
-   PhoneNumberTypeID TINYINT IDENTITY(1,1),
-   PhoneNumberType VARCHAR(40),
+   PhoneNumberTypeID TINYINT IDENTITY(1,1) NOT NULL,
+   PhoneNumberType VARCHAR(40) NOT NULL,
    CONSTRAINT PK_PhoneNumberTypes PRIMARY KEY CLUSTERED(PhoneNumberTypeID)
 );

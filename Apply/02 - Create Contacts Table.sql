@@ -7,12 +7,12 @@ END;
 
 CREATE TABLE dbo.Contacts
 (
-   ContactID INT IDENTITY(1,1),
-   FirstName VARCHAR(40),
-   LastName VARCHAR(40),
-   DateOfBirth DATE,
-   AllowContactByPhone BIT,
-   CreatedDate DATETIME,
+   ContactID INT IDENTITY(1,1) NOT NULL,
+   FirstName VARCHAR(40) NOT NULL,
+   LastName VARCHAR(40) NOT NULL,
+   DateOfBirth DATE NULL,
+   AllowContactByPhone BIT NOT NULL CONSTRAINT DF_Contacts_AllowContactByPhone DEFAULT 0,
+   CreatedDate DATETIME NOT NULL CONSTRAINT DF_Contacts_CreatedDate DEFAULT GetDate(),
    CONSTRAINT PK_Contacts PRIMARY KEY CLUSTERED (ContactID)
 );
 

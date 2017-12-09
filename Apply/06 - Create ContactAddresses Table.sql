@@ -7,12 +7,12 @@ END;
 
 CREATE TABLE ContactAddresses
 (
-   AddressID INT IDENTITY (1,1),
-   ContactID INT,
-   HouseNumber VARCHAR(200),
-   Street VARCHAR(200),
-   City VARCHAR(200),
-   POSTCODE VARCHAR(20),
+   AddressID INT IDENTITY (1,1) NOT NULL,
+   ContactID INT NOT NULL,
+   HouseNumber VARCHAR(200) NULL,
+   Street VARCHAR(200) NULL,
+   City VARCHAR(200) NULL,
+   POSTCODE VARCHAR(20) NULL,
    CONSTRAINT PK_ContactAddresses PRIMARY KEY NONCLUSTERED (AddressID)
 );
 

@@ -7,10 +7,10 @@ END;
 
 CREATE TABLE ContactPhoneNumbers
 (
-   PhoneNumberID INT IDENTITY(1,1),
-   ContactID INT, 
-   PhoneNumberTypeID TINYINT,
-   PhoneNumber VARCHAR(30),
+   PhoneNumberID INT IDENTITY(1,1) NOT NULL,
+   ContactID INT NOT NULL,
+   PhoneNumberTypeID TINYINT NOT NULL,
+   PhoneNumber VARCHAR(30) NOT NULL,
    CONSTRAINT PK_ContactPhoneNumbers PRIMARY KEY CLUSTERED (PhoneNumberID)
 );
 

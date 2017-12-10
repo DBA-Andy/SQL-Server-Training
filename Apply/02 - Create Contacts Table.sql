@@ -14,7 +14,7 @@ CREATE TABLE dbo.Contacts
    AllowContactByPhone BIT NOT NULL CONSTRAINT DF_Contacts_AllowContactByPhone DEFAULT 0,
    CreatedDate DATETIME NOT NULL CONSTRAINT DF_Contacts_CreatedDate DEFAULT GetDate(),
    CONSTRAINT PK_Contacts PRIMARY KEY CLUSTERED (ContactID),
-   CONSTRAINT CK_Contacts_FirstNameLastName CHECK (FirstName != '' or LastName != '')
+   CONSTRAINT CK_Contacts_FirstNameLastName CHECK (FirstName != '' AND LastName != '')
 );
 
 GO

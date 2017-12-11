@@ -13,7 +13,8 @@ CREATE TABLE ContactAddresses
    Street VARCHAR(200) NULL,
    City VARCHAR(200) NULL,
    POSTCODE VARCHAR(20) NULL,
-   CONSTRAINT PK_ContactAddresses PRIMARY KEY NONCLUSTERED (AddressID)
+   CONSTRAINT PK_ContactAddresses PRIMARY KEY NONCLUSTERED (AddressID),
+   CONSTRAINT CK_ContactAddresses_RequireOneAddressField CHECK (HouseNumber != '' AND Street != '' AND City != '' AND PostCode != '')
 );
 
 ALTER TABLE dbo.ContactAddresses

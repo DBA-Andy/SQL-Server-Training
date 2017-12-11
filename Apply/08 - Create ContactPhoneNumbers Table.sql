@@ -11,7 +11,8 @@ CREATE TABLE ContactPhoneNumbers
    ContactID INT NOT NULL,
    PhoneNumberTypeID TINYINT NOT NULL,
    PhoneNumber VARCHAR(30) NOT NULL,
-   CONSTRAINT PK_ContactPhoneNumbers PRIMARY KEY CLUSTERED (PhoneNumberID)
+   CONSTRAINT PK_ContactPhoneNumbers PRIMARY KEY CLUSTERED (PhoneNumberID),
+   CONSTRAINT UK_ContactIdPhoneNumber Unique (ContactID,PhoneNumber)
 );
 
 ALTER TABLE ContactPhoneNumbers

@@ -1,6 +1,6 @@
 USE master;
 
-:setvar path "C:\Users\Administrator\Documents\GitHub\SQL-Server-Training\Apply\"
+:setvar path "C:\Users\Progr\Documents\GitHub\SQL-Server-Training\Apply\"
 
 :setvar currentFile "01 - Create AddressBook Database.sql"
 PRINT 'Executing $(path)$(currentFile)';
@@ -35,6 +35,18 @@ PRINT 'Executing $(path)$(currentFile)';
 :r $(path)$(currentFile)
 
 :setvar currentFile "09 - Create ContactVerificationDetails Table.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
+:setvar currentFile "10 - Insert PhoneNumberTypes.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
+:setvar currentFile "11 - Insert Roles.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
+:setvar currentFile "12 - BulkInsert Contacts.sql"
 PRINT 'Executing $(path)$(currentFile)';
 :r $(path)$(currentFile)
 

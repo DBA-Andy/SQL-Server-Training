@@ -2,7 +2,27 @@ USE master;
 
 :setvar path "C:\Users\Progr\Documents\GitHub\SQL-Server-Training\Rollback\"
 
-:setvar currentFile "12 - Rollback Contacts.sql"
+:setvar currentFile "17 - Rollback ContactVerificationDetails Inserts.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
+:setvar currentFile "16 - Rollback ContactRoles Inserts.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
+:setvar currentFile "15 - Rollback ContactPhoneNumbers Inserts.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
+:setvar currentFile "14 - Rollback ContactPhoneNumbers Inserts.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
+:setvar currentFile "13 - Rollback ContactAddresses Inserts.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
+:setvar currentFile "12 - Rollback Contacts Inserts.sql"
 PRINT 'Executing $(path)$(currentFile)';
 :r $(path)$(currentFile)
 

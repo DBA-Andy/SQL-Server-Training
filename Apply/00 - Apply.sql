@@ -50,6 +50,30 @@ PRINT 'Executing $(path)$(currentFile)';
 PRINT 'Executing $(path)$(currentFile)';
 :r $(path)$(currentFile)
 
+:setvar currentFile "13 - Bulk Insert Contact Addresses.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
+:setvar currentFile "14 - Bulk Insert ContactNotes.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
+:setvar currentFile "15 - Bulk Insert ContactPhoneNumbers.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
+:setvar currentFile "16 - Bulk Insert ContactRoles.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
+:setvar currentFile "17 - Bulk Insert ContactVerificationDetails.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
+:setvar currentFile "18 - Insert Contact Record.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
 PRINT 'All Create scripts successfully executed.';
 
 USE Master;

@@ -74,6 +74,22 @@ PRINT 'Executing $(path)$(currentFile)';
 PRINT 'Executing $(path)$(currentFile)';
 :r $(path)$(currentFile)
 
+:setvar currentFile "19 - Create VerifiedContacts View.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
+:setvar currentFile "20 - Create VerifiedContactRoles View.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
+:setvar currentFile "21 - Create ContactAddresses Clustered Index.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
+:setvar currentFile "22 - Create PhoneNumberTypes Index.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
 PRINT 'All Create scripts successfully executed.';
 
 USE Master;

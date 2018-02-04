@@ -7,6 +7,3 @@ END;
 
 CREATE CLUSTERED INDEX IX_C_ContactAddresses_ContactIDPostCode on
 dbo.ContactAddresses(ContactID,PostCode);
-
-select *
-from dbo.ContactAddresses;

@@ -20,3 +20,5 @@ FROM dbo.Contacts C
    INNER JOIN dbo.ContactVerificationDetails CVD
       ON c.ContactId = CVD.ContactID
 WHERE CVD.ContactVerified = 1;
+
+GO

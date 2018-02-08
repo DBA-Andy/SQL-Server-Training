@@ -90,6 +90,10 @@ PRINT 'Executing $(path)$(currentFile)';
 PRINT 'Executing $(path)$(currentFile)';
 :r $(path)$(currentFile)
 
+:setvar currentFile "23 - Create Contacts AllowContactByPhone Index.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
 PRINT 'All Create scripts successfully executed.';
 
 USE Master;

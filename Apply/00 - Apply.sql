@@ -94,6 +94,10 @@ PRINT 'Executing $(path)$(currentFile)';
 PRINT 'Executing $(path)$(currentFile)';
 :r $(path)$(currentFile)
 
+:setvar currentFile "24 - Create ContactName Function.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
 PRINT 'All Create scripts successfully executed.';
 
 USE Master;

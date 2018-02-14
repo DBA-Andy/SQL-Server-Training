@@ -2,6 +2,10 @@ USE master;
 
 :setvar path "C:\Users\Progr\Documents\GitHub\SQL-Server-Training\Rollback\"
 
+:setvar currentFile "24 - Rollback ContactName Function.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
 :setvar currentFile "23 - Rollback Contacts AllowContactByPhone index.sql"
 PRINT 'Executing $(path)$(currentFile)';
 :r $(path)$(currentFile)

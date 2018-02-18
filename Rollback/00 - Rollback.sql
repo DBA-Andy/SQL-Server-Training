@@ -1,8 +1,12 @@
 USE master;
 
-:setvar path "C:\Users\Progr\Documents\GitHub\SQL-Server-Training\Rollback\"
+:setvar path "C:\Users\Administrator\Documents\GitHub\SQL-Server-Training\Rollback\"
 
 :setvar currentFile "27 - Rollback InsertContact Stored Procedure.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
+:setvar currentFile "26 - Rollback ContactNote UTD.sql"
 PRINT 'Executing $(path)$(currentFile)';
 :r $(path)$(currentFile)
 

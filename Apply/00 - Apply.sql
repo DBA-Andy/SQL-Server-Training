@@ -102,6 +102,10 @@ PRINT 'Executing $(path)$(currentFile)';
 PRINT 'Executing $(path)$(currentFile)';
 :r $(path)$(currentFile)
 
+:setvar currentFile "27 - Create InsertContact Stored Procedure.sql"
+PRINT 'Executing $(path)$(currentFile)';
+:r $(path)$(currentFile)
+
 PRINT 'All Create scripts successfully executed.';
 
 USE Master;
